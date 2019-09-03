@@ -1,0 +1,32 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module dopt ! in 
+    interface  ! in :dopt
+        subroutine dopt(x,dim1,ncand,kin,n,nblock,in,blksiz,k,rstart,nrbar,d,rbar,picked,lndet,xx,tol,zpz,wk,ifault) ! in :dopt:295.f
+            double precision dimension(dim1,kin), intent(in) :: x
+            integer, intent(hide), check(shape(x,0)==dim1), depend(x) :: dim1=shape(x,0)
+            integer, intent(hide), check(shape(x,0)==ncand), depend(x) :: ncand=shape(x,0)
+            integer, intent(hide),check(shape(x,1)==kin),depend(x) :: kin=shape(x,1)
+            integer, intent(in) :: n
+            integer, intent(hide) :: nblock = 0
+            integer, intent(int) :: in
+            integer, intent(hide), depend(n) :: blksiz = n
+            integer, intent(hide), depend(kin), depend(nblock) :: k=kin+nblock
+            logical, intent(in) :: rstart
+            integer, intent(hide), depend(k) :: nrbar = k*(k-1)/2
+            double precision dimension(k), intent(hide), depend(k) :: d
+            double precision dimension(nrbar), intent(hide), depend(nrbar) :: rbar
+            integer dimension(n), intent(in), depend(n) :: picked
+            double precision, intent(out) :: lndet
+            double precision dimension(k), intent(hide), depend(k) :: xx
+            double precision dimension(k), intent(hide), depend(k) :: tol
+            double precision dimension(ncand,1), intent(hide), depend(ncand) :: zpz
+            double precision dimension(k), intent(hide), depend(k) :: wk
+            integer, intent(out) :: ifault
+        end subroutine dopt
+    end interface 
+end python module dopt
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/
