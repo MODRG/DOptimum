@@ -35,12 +35,12 @@ The test case and example problem is provided as [Jupyter](https://jupyter.org/)
 # File description
 | File        | Description  |
 | ----------- |------------- |
-| [295.f]()  | The Algorithm 295 FORTRAN source code |
-| [295.pyf]() | The corresponding signature file, created with f2py and manually modified |
-| [295.pdf]() | A description of the algorithm |
-| [test_295.ipynb]() | A basic test case to test the implementation (Jupyter notebook) |
-| [example.ipynb]() | A two variable, quadratic model example problem from Meyers and Montgommery (Jupyter notebook)|
-| [MyersExample.xlsx]() | The data required for example.ipynb from Meyers and Montgommery |
+| [295.f](https://github.com/MODRG/DOptimum/blob/master/295.f)  | The Algorithm 295 FORTRAN source code |
+| [295.pyf](https://github.com/MODRG/DOptimum/blob/master/295.pyf) | The corresponding signature file, created with f2py and manually modified |
+| [295.pdf](https://github.com/MODRG/DOptimum/blob/master/295.pdf) | A description of the algorithm |
+| [test_295.ipynb](https://github.com/MODRG/DOptimum/blob/master/test_295.ipynb) | A basic test case to test the implementation (Jupyter notebook) |
+| [example.ipynb](https://github.com/MODRG/DOptimum/blob/master/example.ipynb) | A two variable, quadratic model example problem from Meyers and Montgommery (Jupyter notebook)|
+| [MyersExample.xlsx](https://github.com/MODRG/DOptimum/blob/master/MyersExample.xlsx) | The data required for example.ipynb from Meyers and Montgommery |
 
 
 # Getting started
